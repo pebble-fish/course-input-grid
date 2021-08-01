@@ -8,9 +8,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
 
   columnDefs = [
-    { field: 'make' },
-    { field: 'model' },
-    { field: 'price'}
+    { field: 'make', sortable: true, filter: true, editable: true },
+    { field: 'model', sortable: true, filter: true, editable: true },
+    { field: 'price', sortable: true, filter: true, editable: true }
 ];
 
 rowData = [
